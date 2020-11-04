@@ -1,0 +1,18 @@
+<view>
+  <view class="none_tips" wx:if="{{memberList.length==0}}">
+    没有人参加比赛
+  </view>
+  <view class="match_box" wx:for="{{memberList}}" >
+    <view class="item_box" data-gametype="{{item.gameType}}" data-id="{{item.id}}" bindtap="gotoDetails">
+      <!-- 比赛人姓名 -->
+      <text style="font-size:30rpx; color:#000000">姓名：{{item.name}}</text>
+      <text>工资卡号：{{item.salaryid}}</text>
+      <text>手机号：{{item.phone}}</text>
+
+      
+    </view>
+    <view class="img_container">
+          <image class="icon" data-id="{{item.id}}" src="../../images/tab3/delete.png" bindtap="deleteMember"></image>
+      </view>
+  </view>
+</view>

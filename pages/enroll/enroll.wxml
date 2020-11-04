@@ -1,0 +1,76 @@
+<view class="">
+  <image class="paperwall" src="{{imageUrl}}"></image>
+
+  <view style="height:1px"></view>
+
+  <view class="sim-list">
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/calender.png"></image>
+        报名截止
+      </view>
+      <text class="text-gray">{{deadline}}</text>
+    </view>
+    <view class="sim-list-item">
+    
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/calender.png"></image>
+        比赛时间
+      </view>
+      <text class="text-gray">{{beginTime}}</text>
+    </view>
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/calender.png"></image>
+        比赛结束时间
+      </view>
+      <text class="text-gray">{{endTime}}</text>
+    </view>
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/address.png"></image>
+        比赛地点
+      </view>
+      <text class="text-gray">{{address}}</text>
+    </view>
+    
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        参赛人数
+      </view>
+      <text class="text-gray">{{participantNum}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        限制人数
+      </view>
+      <text class="text-gray">{{limitNum}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/phone.png"></image>
+        联系人
+      </view>
+      <text class="text-gray">{{ownerName}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/contact.png"></image>
+        联系电话
+      </view>
+      <text class="text-gray">{{phone}}</text>
+    </view>
+  </view>
+
+  <view>
+    <button wx:if="{{localtime>deadline}}" disabled="true" class="sim-btn sim-btn-info" bindtap="gotoInfoPageSingle">我要报名</button>
+    <button wx:if="{{localtime<=deadline  && (gameType == '男单'||gameType == '女单')}}" class="sim-btn sim-btn-info" bindtap="gotoInfoPageSingle">我要报名</button>
+    <button wx:if="{{localtime<=deadline && (gameType == '男双'||gameType == '女双' || gameType == '混双')}}" class="sim-btn sim-btn-info" bindtap="gotoInfoPageDouble">我要报名</button>
+  </view>
+  
+</view>

@@ -1,0 +1,8 @@
+<!--关于我们-->
+<view class="new_container">
+    <image src="../../images/about_ball.png"></image>
+    <!-- <text>电话: 021-22222222</text> -->
+    <text>邮件： copy1996@qq.com</text>
+    <text>QQ: 1428306819</text>
+    <text>地址：ustc</text>
+</view>

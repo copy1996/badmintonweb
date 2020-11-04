@@ -1,0 +1,8 @@
+/* pages/enrollInfoDouble/enrollInfoDouble.wxss */
+.title_tips{
+  display: block;
+  padding-left: 24rpx;
+  margin-top:40rpx;
+  margin-bottom:20rpx;
+  font-size:28rpx
+}

@@ -1,0 +1,31 @@
+.container{
+  align-items: stretch
+}
+
+.paperwall{
+  width:650rpx;
+  height:412rpx;
+  display: block;
+  margin: 40rpx auto;
+}
+
+.icon_area{
+  width:32rpx;
+  height:32rpx;
+  margin-right:10rpx;
+  vertical-align: bottom
+}
+
+.view_hide{
+  display:none;
+}
+.view_show{
+  display:show;
+}
+.title_tips{
+  display: block;
+  padding-left: 24rpx;
+  margin-top:40rpx;
+  margin-bottom:20rpx;
+  font-size:28rpx
+}

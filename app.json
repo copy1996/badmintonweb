@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/activity/activity",
+    "pages/enroll/enroll",
+    "pages/create/create",
+    "pages/mine/mine",
+    "pages/matchDetails/matchDetails",
+    "pages/myMatchList/myMatchList",
+    "pages/editMatch/editMatch",
+    "pages/attendList/attendList",
+    "pages/memberList/memberList",
+    "pages/about/about",
+    "pages/logs/logs",
+    "pages/member/member",
+    "pages/memberDetails/memberDetails",
+    "pages/enrollInfoSingle/enrollInfoSingle",
+    "pages/enrollInfoDouble/enrollInfoDouble"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0BA8F9",
+    "navigationBarTitleText": "羽毛球报名",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#FFFFFF",
+    "selectedColor": "#FFFF00",
+    "borderStyle": "black",
+    "backgroundColor": "#0BA8F9",
+    "list": [
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "比赛列表",
+        "iconPath": "images/tab1.png",
+        "selectedIconPath": "images/tab1_selected.png"
+      },
+      {
+        "pagePath": "pages/create/create",
+        "text": "创建比赛",
+        "iconPath": "images/tab2.png",
+        "selectedIconPath": "images/tab2_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的活动",
+        "iconPath": "images/tab3.png",
+        "selectedIconPath": "images/tab3_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

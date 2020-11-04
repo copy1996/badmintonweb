@@ -1,0 +1,136 @@
+<view class="">
+  <!-- <image class="paperwall" src="{{imageUrl}}"></image> -->
+
+  <view style="height:1px"></view>
+
+  <view class="sim-list">
+    <view class="sim-list-item">
+     
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        参赛选手姓名
+      </view>
+      <text class="text-gray">{{name}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        工资号或一卡通号
+      </view>
+      <text class="text-gray">{{salaryID}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        身份证号
+      </view>
+      <text class="text-gray">{{identification}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/phone.png"></image>
+        性别
+      </view>
+      <text class="text-gray">{{sex}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/phone.png"></image>
+        手机号码
+      </view>
+      <text class="text-gray">{{phone}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        年龄
+      </view>
+      <text class="text-gray">{{age}}</text>
+    </view>
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        上衣尺码
+      </view>
+      <text class="text-gray">{{clothNum}}</text>
+    </view>
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        裤子尺码
+      </view>
+      <text class="text-gray">{{pantsNum}}</text>
+    </view>
+    
+    <view class="{{gameType=='男单'||gameType=='女单'?'view_hide':'view_show'}}">
+      <label class="title_tips">搭档信息</label>
+      <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        姓名
+      </view>
+      <text class="text-gray">{{partnerName}}</text>
+    </view>
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        工资号或一卡通号
+      </view>
+      <text class="text-gray">{{partnerSalaryID}}</text>
+    </view>
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        身份证号
+      </view>
+      <text class="text-gray">{{partnerIdentification}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/phone.png"></image>
+        性别
+      </view>
+      <text class="text-gray">{{partnerSex}}</text>
+    </view>
+
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/phone.png"></image>
+        手机号码
+      </view>
+      <text class="text-gray">{{partnerPhone}}</text>
+    </view>
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        年龄
+      </view>
+      <text class="text-gray">{{partnerAge}}</text>
+    </view>
+    
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        上衣尺码
+      </view>
+      <text class="text-gray">{{partnerClothNum}}</text>
+    </view>
+    <view class="sim-list-item">
+      <view> 
+        <image class="icon_area"  src="../../images/tab1/team.png"></image>
+        裤子尺码
+      </view>
+      <text class="text-gray">{{partnerPantsNum}}</text>
+    </view>
+  </view>
+
+    </view>
+    
+  
+</view>

@@ -1,0 +1,47 @@
+<text style="width:100%; display:block;text-align:center;margin: 80rpx auto;">
+    请完善报名信息
+  </text>
+  <view class="sim-form">
+
+    <view class="sim-form-group">
+      <label>参赛者姓名:</label>
+      <input placeholder="请输入参赛者姓名" value="{{name}}" bindinput="inputName"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>身份证号:</label>
+      <input placeholder="请输入身份证号" value="{{identification}}" bindinput="inputIdentification"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>电话:</label>
+      <input placeholder="请输入联系电话" value="{{phone}}" bindinput="inputPhone"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>工资号/一卡通:</label>
+      <input placeholder="请输入工资号或一卡通号" value="{{salaryID}}" bindinput="inputSalaryID"/>
+    </view>
+    <view class="sim-form-group">
+      <label>上衣尺码:</label>
+      <picker bindchange="bindPickerChange" value="{{clothIndex}}" range="{{clothArr}}" bindchange="clothChange">
+        <view class="picker">
+          {{clothArr[clothIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+    <view class="sim-form-group">
+      <label>裤子尺码:</label>
+      <picker bindchange="bindPickerChange" value="{{pantsIndex}}" range="{{pantsArr}}" bindchange="pantsChange">
+        <view class="picker">
+          {{pantsArr[pantsIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+
+  </view>
+
+
+  <view style="margin-top:80rpx;">
+    <button class="sim-btn sim-btn-info" bindtap="submitInfo">提交报名</button>
+  </view>

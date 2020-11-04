@@ -1,0 +1,103 @@
+<text style="width:100%; display:block;text-align:center;margin: 80rpx auto;">
+    请完善报名信息
+  </text>
+  <view class="sim-form">
+
+    <view class="sim-form-group">
+      <label>参赛者姓名:</label>
+      <input placeholder="请输入参赛者姓名" value="{{name}}" bindinput="inputName"/>
+    </view>
+
+    <!-- <view class="sim-form-group">
+      <label>性别:</label>
+      <picker bindchange="bindPickerChange" value="{{sexIndex}}" range="{{sexArr}}" bindchange="sexChange">
+        <view class="picker">
+          {{sexArr[sexIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view> -->
+    <view class="sim-form-group">
+      <label>身份证号:</label>
+      <input placeholder="请输入身份证号" value="{{identification}}" bindinput="inputIdentification"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>电话:</label>
+      <input placeholder="请输入联系电话" value="{{phone}}" bindinput="inputPhone"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>工资号/一卡通:</label>
+      <input placeholder="请输入工资号或一卡通号" value="{{salaryID}}" bindinput="inputSalaryID"/>
+    </view>
+
+    <!-- <view class="sim-form-group">
+      <label>出生日期:</label>
+      <picker mode="date" value="{{birthday}}" bindchange="birthdayChange">
+        <view class="picker">
+          {{birthday}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view> -->
+
+    <view class="sim-form-group">
+      <label>上衣尺码:</label>
+      <picker bindchange="bindPickerChange" value="{{clothIndex}}" range="{{clothArr}}" bindchange="clothChange">
+        <view class="picker">
+          {{clothArr[clothIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+    <view class="sim-form-group">
+      <label>裤子尺码:</label>
+      <picker bindchange="bindPickerChange" value="{{pantsIndex}}" range="{{pantsArr}}" bindchange="pantsChange">
+        <view class="picker">
+          {{pantsArr[pantsIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+
+  </view>
+<label class="title_tips">搭档信息</label>
+<view class="sim-form">
+  <view class="sim-form-group">
+      <label>搭档姓名:</label>
+      <input placeholder="请输入参赛者姓名" value="{{partnerName}}" bindinput="inputPartnerName"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>搭档身份证号:</label>
+      <input placeholder="请输入身份证号" value="{{partnerIdentification}}" bindinput="inputPartnerIdentification"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>电话:</label>
+      <input placeholder="请输入联系电话" value="{{partnerPhone}}" bindinput="inputPartnerPhone"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>工资号/一卡通:</label>
+      <input placeholder="请输入工资号或一卡通号" value="{{partnerSalaryID}}" bindinput="inputPartnerSalaryID"/>
+    </view>
+
+    <view class="sim-form-group">
+      <label>上衣尺码:</label>
+      <picker bindchange="bindPickerChange" value="{{partnerClothIndex}}" range="{{partnerClothArr}}" bindchange="partnerClothChange">
+        <view class="picker">
+          {{partnerClothArr[partnerClothIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+    <view class="sim-form-group">
+      <label>裤子尺码:</label>
+      <picker bindchange="bindPickerChange" value="{{partnerPantsIndex}}" range="{{partnerPantsArr}}" bindchange="partnerPantsChange">
+        <view class="picker">
+          {{partnerPantsArr[partnerPantsIndex]}}<text class="sim-arrow-bottom"></text>
+        </view>
+      </picker>
+    </view>
+
+</view>
+<view style="margin-top:80rpx;">
+    <button class="sim-btn sim-btn-info" bindtap="submitInfo">提交报名</button>
+  </view>
